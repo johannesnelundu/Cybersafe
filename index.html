@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081426">
+  <meta name="description" content="Simple cybersecurity lessons and quizzes from TheRealTechInnovator CyberSafe.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/shield-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>CyberSafe | TheRealTechInnovator</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">🛡️</div>
+    <div>
+      <p class="eyebrow">THEREALTECHINNOVATOR</p>
+      <h1>CyberSafe</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR DIGITAL SAFETY STARTS HERE</p>
+      <h2>Think before you <span>click.</span></h2>
+      <p>Learn simple ways to protect your accounts, phone, and personal information.</p>
+      <a class="primary-button" href="#learn">Start learning <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section id="learn" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">LEARN THE BASICS</p>
+        <h2>Stay safer online</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🎣</div>
+          <h3>Spot phishing</h3>
+          <p>Be careful with urgent messages, unexpected prizes, and links asking you to sign in.</p>
+          <button class="text-button" data-tip="phishing">Read safety tip →</button>
+        </article>
+        <article class="card">
+          <div class="card-icon">📲</div>
+          <h3>Download wisely</h3>
+          <p>Use official app stores, check the developer, and review requested permissions.</p>
+          <button class="text-button" data-tip="downloads">Read safety tip →</button>
+        </article>
+        <article class="card">
+          <div class="card-icon">🔑</div>
+          <h3>Protect accounts</h3>
+          <p>Use unique passwords and turn on multi-factor authentication wherever possible.</p>
+          <button class="text-button" data-tip="accounts">Read safety tip →</button>
+        </article>
+      </div>
+      <div id="tip-panel" class="tip-panel" hidden aria-live="polite"></div>
+    </section>
+
+    <section class="quiz-section">
+      <div class="section-heading">
+        <p class="eyebrow">QUICK KNOWLEDGE CHECK</p>
+        <h2>Would you spot the warning sign?</h2>
+      </div>
+      <div class="quiz-card">
+        <p class="question">You receive a message saying your account will be closed in 10 minutes unless you click a link. What should you do?</p>
+        <div class="answers">
+          <button class="answer" data-answer="wrong">Click quickly to save the account</button>
+          <button class="answer" data-answer="right">Don't click; check through the official app or website</button>
+          <button class="answer" data-answer="wrong">Forward it to all your friends</button>
+        </div>
+        <p id="quiz-feedback" class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="disclaimer">
+      <strong>Remember:</strong> CyberSafe is an educational tool. It does not scan devices or certify that links, apps, or messages are safe. When in doubt, verify using an official channel.
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> TheRealTechInnovator · Learn. Verify. Protect.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
